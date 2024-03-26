@@ -11,13 +11,13 @@ public class MainPengkat {
 
         Pangkat [] png = new Pangkat[elemen];
         for (int i = 0; i < elemen; i++) {
-            png[i] = new Pangkat();
             System.out.println("Masukkan nilai yang hendak dipangkatkan: ");
             int nilai = sc17.nextInt();
-            png[i].nilai = nilai;
+            
             System.out.println("Masukkan nilai pemangkat: ");
             int pangkat = sc17.nextInt();
-            png[i].pangkat = pangkat;
+            png[i] = new Pangkat(nilai,pangkat);
+
         }
 
         System.out.println("HASIL PANGKAT - BRUTE FORCE");
