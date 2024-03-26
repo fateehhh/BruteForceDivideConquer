@@ -2,7 +2,10 @@ package minggu5;
 
 public class Pangkat {
     public int nilai, pangkat;
-
+    Pangkat(int x, int y){
+        nilai = x;
+        pangkat = y;
+    }
     int pangkatBF(int a, int n) {
         int hasil = 1;
         for (int i = 0; i < n; i++) {
